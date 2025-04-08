@@ -19,7 +19,7 @@ A minimalistic API that provides various datetime-related utilities, built with 
 ### 📥 Step 0: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/datetime-api.git
+git clone https://github.com/iamfaseeh/datetime-api.git
 cd datetime-api
 ```
 
