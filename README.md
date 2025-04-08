@@ -16,7 +16,12 @@ A minimalistic API that provides various datetime-related utilities, built with 
 
 ## 🚀 Getting Started with Docker
 
-Follow the steps below to build and run the project using Docker.
+### 📥 Step 0: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/datetime-api.git
+cd datetime-api
+```
 
 ### 🧱 Step 1: Build the Docker Image
 
@@ -38,12 +43,24 @@ docker run -d -p 3000:3000 datetime-api
 
 ```plaintext
 datetime-api/
-├── app/
-│   └── main.py
+├── terraofrm/
+    └── main.tf
+    └── backend.tf
+    └── outputs.tf
+    └── variables.tf
+    └── versions.tf
+    └── terraform.tfvars.sample
 ├── Dockerfile
+├── api.py
 ├── requirements.txt
 └── README.md
 ```
+
+---
+
+## 📁 Project Architecture
+
+![Image](image.png)
 
 ---
 
@@ -56,6 +73,47 @@ datetime-api/
 
 ---
 
+
+
+## 🌍 Running the Terraform Code
+
+The infrastructure configuration for deploying the API is located in the `terraform/` directory.
+
+### 🧰 Prerequisites
+
+Ensure the following tools are installed on your local machine:
+
+| Tool        | Version       |
+|-------------|---------------|
+| 🛠️ Terraform | >= 1.10.0       |
+| ☁️ AWS CLI   | >= 2.21.0      |
+
+### ⚙️ Running the Terraform Scripts
+
+1. Navigate to the Terraform directory:
+   ```bash
+   cd terraform
+   ```
+
+2. Initialize Terraform:
+   ```bash
+   terraform init
+   ```
+
+3. Review the execution plan:
+   ```bash
+   terraform plan
+   ```
+
+4. Apply the configuration:
+   ```bash
+   terraform apply
+   ```
+
+> Make sure your AWS credentials are configured properly before running Terraform commands.
+
 ## 🌐 Author
 
 Made with ❤️ by [iamfaseeh](https://github.com/iamfaseeh) ![GitHub](https://img.shields.io/badge/GitHub-iamfaseeh-181717?style=flat&logo=github)
+
+---
